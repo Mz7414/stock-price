@@ -37,6 +37,7 @@ def stock(stockid,name):
     mi = min(x)
     high = ((ma-mi)/4+mi)*1.2
     low = ((ma-mi)/4+mi)*0.9
+    high = 100
     if y >= high :
         data = {
             'message': 
