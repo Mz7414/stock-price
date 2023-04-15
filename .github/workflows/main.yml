@@ -19,5 +19,6 @@ jobs:
         pip install datetime
         pip install FinMind
         pip install requests
+        pip install BeautifulSoup4
     - name: runpython
       run: python stock-price.py
