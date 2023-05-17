@@ -19,7 +19,7 @@ def line(data, stockid, name):
     requests.post(url, headers=headers, data=data)
     
 def stock(stockid,name):
-    url = f'https://tw.stock.yahoo.com/quote/{stockid}.TWO'
+    url = f'https://tw.stock.yahoo.com/quote/{stockid}.TW'
     resp = requests.get(url)                          # 取得網頁內容
     soup = BeautifulSoup(resp.text, "html.parser")    # 轉換內容
     a = soup.select('.Fz\(32px\)')[0]
