@@ -54,5 +54,5 @@ def stock(stockid,name):
         }
         line(data, stockid, name)
 
-stock('8069','元太')
+stock('2313','華通')
 
