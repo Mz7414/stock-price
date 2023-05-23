@@ -60,4 +60,4 @@ def stock(stockid,name):
         line(data, stockid, name)
 
 stock('2313','華通')
-stock('6415','矽力KY')
+#stock('6415','矽力KY')
