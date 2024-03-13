@@ -21,11 +21,9 @@ def line(data, stockid, name):
 def stock(stockid,name):
     try:
         url = f'https://tw.stock.yahoo.com/quote/{stockid}.TW'
-        resp = requests.get(url)
     except:
         url = f'https://tw.stock.yahoo.com/quote/{stockid}.TWO'
-        resp = requests.get(url)
-        
+    resp = requests.get(url)
     soup = BeautifulSoup(resp.text, "html.parser")    
     a = soup.select('.Fz\(32px\)')[0]
     y = float(a.text)
@@ -61,3 +59,4 @@ def stock(stockid,name):
 
 #stock('2313','華通')
 #stock('6415','矽力KY')
+stock('8046',"南電")
