@@ -60,3 +60,4 @@ def stock(stockid,name):
 #stock('2313','華通')
 #stock('6415','矽力KY')
 stock('8046',"南電")
+stock("1303","南亞")
